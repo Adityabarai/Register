@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form
+            action="https://script.google.com/macros/s/AKfycbyoovMtW4NJ0a8N5OqLEfZbiQeyXLPxAmCSmoxJhlxudSag-bceoLZqOiChxNSq2i1T1Q/exec"
+            method="post">
+
+            <div class="input-icon">
+                <i class='bx bx-envelope'></i>
+                <input type="email" name="Email" placeholder="Email Address" required>
+            </div>
+            <div class="input-icon">
+                <i class='bx bx-lock'></i>
+                <input type="password" name="Password" placeholder="Password" required>
+                <i class='bx bxs-low-vision' id="togglePassword"></i>
+            </div>
+            <a href="resetpass.html">Forgot password?</a>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+</body>
+<script>
+    const togglePassword = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+
+    togglePassword.addEventListener('click', function () {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('fa-eye');
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
+
+</html>
