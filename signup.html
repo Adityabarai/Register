@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="signup.css">
 </head>
 
@@ -18,15 +18,15 @@
             method="post">
 
             <div class="input-icon">
-                <i class='bx bx-user'></i>
+                <i class="fa-solid fa-user"></i> <!-- User Icon -->
                 <input type="text" name="FullName" placeholder="Full Name" required>
             </div>
             <div class="input-icon">
-                <i class='bx bx-envelope'></i>
+                <i class="fa-solid fa-envelope"></i></i> <!-- Email Icon -->
                 <input type="email" name="Email" placeholder="Email Address" required>
             </div>
             <div class="input-icon">
-                <i class='bx bx-lock'></i>
+                <i class="fa-solid fa-lock"></i> <!-- Password Icon -->
                 <input type="password" name="Password" placeholder="Password" required>
             </div>
             <button type="submit">Sign Up</button>
@@ -34,6 +34,7 @@
         <p>Already have an account? <a href="login.html">Login here</a></p>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

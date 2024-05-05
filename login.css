@@ -72,3 +72,7 @@ body {
 .login-form p a:hover {
   text-decoration: underline;
 }
+
+#togglePassword {
+  margin-left: 260px;
+}

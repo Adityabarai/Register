@@ -5,8 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="login.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+
+#password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+.login-form .input-icon {
+  position: relative;
+}
+
+.login-form .input-icon i {
+  position: absolute;
+  left: 10px;
+  /* Adjust left position as needed */
+  top: 50%;
+  transform: translateY(-100%);
+  color: #888;
+}
+
+.login-form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+.login-form p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-form p a {
+  color: #4caf50;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
+
+#togglePassword {
+  margin-left: 260px;
+}
+    </style>
 </head>
 
 <body>
@@ -17,12 +106,12 @@
             method="post">
 
             <div class="input-icon">
-                <i class='bx bx-envelope'></i>
+                <i class="fa-solid fa-envelope"></i> <!-- Email Icon -->
                 <input type="email" name="Email" placeholder="Email Address" required>
             </div>
             <div class="input-icon">
-                <i class='bx bx-lock'></i>
-                <input type="password" name="Password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i> <!-- Password Icon -->
+                <input type="password" name="Password" id="password" placeholder="Password" required>
                 <i class='bx bxs-low-vision' id="togglePassword"></i>
             </div>
             <a href="resetpass.html">Forgot password?</a>
@@ -31,16 +120,6 @@
         <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
     </div>
 </body>
-<script>
-    const togglePassword = document.getElementById('togglePassword');
-    const password = document.getElementById('password');
-
-    togglePassword.addEventListener('click', function () {
-        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-        password.setAttribute('type', type);
-        this.classList.toggle('fa-eye');
-        this.classList.toggle('fa-eye-slash');
-    });
-</script>
+<script src="script.js"></script>
 
 </html>
