@@ -2,7 +2,7 @@
 Welcome to the User Authentication System! This repository contains the code and documentation for a robust authentication system that allows users to register, log in, and reset their passwords securely. The system is designed to provide a smooth user experience while maintaining the integrity of user data.<br>
 
 <h3>Features</h3>
-* User Registration: Users can sign up with their email addresses and create a new account.<br>
+* User Registration: Users can sign up with their email addresses and create a new account. <br>
 * Secure Login: Provides a secure login system for registered users.<br>
 * Password Reset: Users can request a password reset, which includes a secure process to reset their password while preserving their email address.<br>
 * User-Friendly Interface: The system is designed with an intuitive and user-friendly interface.<br>
